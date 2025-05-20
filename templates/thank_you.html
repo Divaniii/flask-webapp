@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href = "{{ url_for('home') }}">home</a></li>
+            <li><a href = "{{ url_for('about') }}">about</a></li>
+            <li><a href = "{{ url_for('contact') }}">contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>Thank you for contacting us, {{name}}!</h1>
+    <p>We will get back to you at {{ email }} soon.</p>
+    <p>Your message: {{ message }}</p>
+
+    
+
+</body>
+</html>
